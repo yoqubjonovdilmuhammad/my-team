@@ -1,0 +1,407 @@
+/* livvic-regular - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/livvic-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-italic - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/livvic-v14-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-500 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/livvic-v14-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-500italic - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/livvic-v14-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-600 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/livvic-v14-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-600italic - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 600;
+  src: local(""),
+    url("../fonts/livvic-v14-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/livvic-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700italic - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/livvic-v14-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ROOT START */
+
+:root {
+  --primary-midngith-green-color: #014e56;
+  --primary-light-coral-color: #f67e7e;
+  --primary-white-color: #ffffff;
+  --secondary-rapture-blue-color: #79c8c7;
+  --secondary-police-blue-color: #2c6269;
+  --secondary-deep-jungle-green-color: #004047;
+  --secondary-sacramento-state-green-color: #012f34;
+  --secondary-dark-green-color: #002529;
+
+  --h1-fs-lg: 10rem;
+  --h1-lh-lg: 1;
+
+  --h1-fs: 6.4rem;
+  --h1-lh: 0.875;
+
+  --h2-fs: 4.8rem;
+  --h2-lh: 1;
+
+  --h3-fs: 1.8rem;
+  --h3-lh: 1.56;
+
+  --body1-fs: 1.8rem;
+  --body1-lh: 1.56;
+
+  --body2-fs: 1.5rem;
+  --body2-lh: 1.67;
+}
+/* ROOT END */
+
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Livvic";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  background-color: #014e56;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background: #f67e7e;
+  margin-bottom: 34px;
+}
+/* HEADER STYLE */
+
+.header {
+  margin-top: 73px;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+.site_logo {
+  display: flex;
+  margin-right: 80px;
+}
+.nav {
+  margin-right: auto;
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav_link {
+  font-size: 18px;
+  color: var(--primary-white-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 9px 33px 11px 32px;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  color: var(--primary-white-color);
+  transition: 0.3s linear;
+}
+.btn:hover {
+  background: var(--primary-white-color);
+  color: var(--secondary-dark-green);
+}
+
+.main {
+  padding-top: 133px;
+}
+
+.hero {
+  padding-bottom: 250px;
+  background: url(../img/hero-bottom.svg), url(../img/reviews-bg-left\ \(2\).png);
+  background-position: left top, bottom right 250px;
+  background-repeat: no-repeat;
+}
+.hero_container {
+  display: flex;
+}
+.hero_title {
+  width: 100%;
+  max-width: 635px;
+  font-family: "Livvic";
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  color: var(--primary-white-color);
+}
+.hero_wrapper hr {
+  margin-bottom: 79px;
+}
+.hero_wrapper {
+  width: 100%;
+  max-width: 435px;
+}
+.hero_wrapper p {
+  font-family: Livvic;
+  font-size: 18px;
+  color: var(--primary-white-color);
+}
+/* SERVICES */
+.services {
+  padding: 140px 0;
+  background: url(../img/reviews-bg-right\ \(1\).png),
+    var(--secondary-sacramento-state-green-color);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.services_container {
+  display: flex;
+  justify-content: space-between;
+}
+.services_wrapper {
+  width: 100%;
+  max-width: 445px;
+}
+.services_wrapper h3 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--primary-white-color);
+}
+.services_list {
+  width: 100%;
+  min-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 58px;
+}
+.services_item {
+  display: flex;
+  gap: 23px;
+}
+.services_item::before {
+  content: url(../img/svg/feature1.svg);
+}
+.services_item:nth-child(2)::before {
+  content: url(../img/svg/feature2.svg);
+}
+.services_item:nth-child(3)::before {
+  content: url(../img/svg/feature3.svg);
+}
+.services_item h4 {
+  font-size: 18px;
+  padding-bottom: 16px;
+  font-weight: 700;
+  color: var(--primary-light-coral-color);
+}
+.services_item p {
+  width: 100%;
+  max-width: 445px;
+  line-height: 25px;
+  color: var(--primary-white-color);
+}
+/* COMMENTS */
+.comments {
+  padding: 140px 0;
+  background: url(../img/reviews-bg-left\ \(2\).png), url(../img/reviews-bg-right\ \(1\).png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+}
+.comments_desc_title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--primary-white-color);
+  margin-bottom: 92px;
+}
+
+/* .comments_wrapper {
+  display: flex;
+} */
+
+.comments_desc_list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 52px;
+  text-align: center;
+}
+
+.comments_desc_item {
+  position: relative;
+  width: 350px;
+}
+.comments_desc_item::before {
+  content: url("../img/svg/qo\'shtirnoq.svg");
+  position: absolute;
+  /* background: url('../img/icon-quotes.svg'); */
+  background-repeat: no-repeat;
+  top: -40px;
+  left: 140px;
+  z-index: -1;
+}
+
+.comments_desc_item_title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary-rapture-blue-color);
+}
+.comments_desc_item_job {
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 32px;
+  color: var(--primary-white-color);
+}
+.comments_desc_text {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 32px;
+  color: var(--primary-white-color);
+}
+.comments_desc_img {
+  text-align: center;
+  border-radius: 62px;
+  border: 2px solid #c4fffe;
+}
+/* ========================================================================================================== */
+/* REGISTER */
+.register {
+  padding: 76px;
+  background: var(--primary-light-coral-color);
+  background-image: url(../img/Group.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.register_container {
+}
+.register_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.register_title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--secondary-sacramento-state-green-color);
+  margin-right: 260px;
+}
+.register_link {
+  display: inline-block;
+  padding: 9px 33px 11px 32px;
+  border-radius: 24px;
+  border: 2px solid #012f34;
+  color: var(--secondary-sacramento-state-green-color);
+  transition: 0.3s linear;
+}
+.register_link:hover {
+  background: var(--secondary-sacramento-state-green-color);
+  color: var(--primary-white-color);
+}
+
+
+
+
+.footer {
+  padding: 48px;
+  background: var(--secondary-dark-green-color);
+}
+.footer_container {
+  display: flex;
+}
+.footer_wrapper {
+  margin-right: 125px;
+}
+.footer_logo {
+  margin-bottom: 25px;
+}
+.footer_list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footer_item {
+}
+.footer_title {
+}
+.footer_link {
+  font-size: 18px;
+  color: var(--primary-white-color);
+}
